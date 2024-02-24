@@ -21,7 +21,7 @@ pipeline
       {
           steps
           {
-             sh 'scp /var/lib/jenkins/workspace/sample/target/devops.war ubuntu@172.31.17.156:/var/lib/tomcat9/webapps/testapp.war' 
+             sh 'scp /var/lib/jenkins/workspace/sample/target/devops.war ubuntu@Private-ip-Test:/var/lib/tomcat9/webapps/testapp.war' 
               
           }
       }
@@ -37,7 +37,7 @@ pipeline
       {
           steps
           {
-             sh 'scp /var/lib/jenkins/workspace/sample/target/devops.war ubuntu@172.31.24.99:/var/lib/tomcat9/webapps/appnew.war' 
+             sh 'scp /var/lib/jenkins/workspace/sample/target/devops.war ubuntu@Private-ip-Prod:/var/lib/tomcat9/webapps/appnew.war' 
               
           }
       }
